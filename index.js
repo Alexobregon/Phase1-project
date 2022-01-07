@@ -172,7 +172,7 @@ const appendComment = function(input) {
       
 
       weatherLocation = `${input} `;
-      event.target.textLocation.value = ''
+      //event.target.textLocation.value = ''
 
       fetch('https://api.openweathermap.org/data/2.5/weather?q=' + weatherLocation + '&units=imperial&appid=aac56d8ba335e529dfa836fcfbfb5d1d')
       .then(response => response.json())
